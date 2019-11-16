@@ -1,0 +1,11 @@
+--- 
+services: 
+  redis: 
+    build: redis
+  web: 
+    image: "."
+    ports: 
+      - "5000:5000"
+    volumes: 
+      - ".:/code"
+version: "2"
